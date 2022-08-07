@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>average calculator</h1>
+        <form onsubmit= "average() ;return false;" >
+            <label for="math">Math</label>
+            <input type="number" required id="math" placeholder="enter math marks">
+            <br>
+            <label for="phy">Physics</label>
+            <input type="number" required id="phy" placeholder="enter your physics marks">
+            <br>
+            <label for="chem">Chemistry</label>
+            <input type="number" required id="chem" placeholder="enter your chemistry marks">
+            <br>
+            <label for="islamiyat">islamiyat</label>
+            <input type="number" required id="islamiyat" placeholder="enter your islamiyat marks">
+            <br>
+            <button type="submit">Submit </button>
+        </form>
+        <h1 id="result"></h1>
+        <script>
+            function average() {
+                let math = document.querySelector("#math").value;
+                let phy = document.querySelector("#phy").value;
+                let chem = document.querySelector("#chem").value;
+                let islamiyat = document.querySelector("#islamiyat").value;
+                phy = Number(phy)
+                chem =Number(chem)
+                math =Number(math)
+                islamiyat =Number(islamiyat)
+                let result = (math + phy + islamiyat+ chem)/4
+                document.querySelector("#result").innerHTML= `anerage is ${result}`
+            }
+        </script>
+</body>
+</html>
