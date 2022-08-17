@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>array cloning</h1>
+    <script>
+    // create an array
+    let myArr = [1, 2, 3]
+    let clonArr = [...myArr] //reference breaking 
+
+    console.log("my array" ,myArr);
+    console.log("cloned array" ,clonArr);
+    clonArr[0]="ali";
+    clonArr[2]=9;
+    console.log("after changing", clonArr)
+    console.log("my arr" , myArr)
+</script>
+</body>
+</html>
