@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>array methods</h1>
+    // we can alter array using methods
+    <script>
+        let myArr = [1, 2, 3]
+        // for adding value in ending index
+        myArr.push(4, "alirehman")//it will add values in array
+
+        console.log("my array=", myArr)
+
+        //pop method ;; it will delete values on last index
+        myArr.pop();
+        console.log("alter array", myArr)
+
+        //shift ;; it will remove value at the begining of array
+        myArr.shift()
+        console.log(myArr)
+
+        // unshift add value from the beginning of array
+        myArr.unshift("beg");
+        console.log(myArr)
+        // we can use .concat() to add arrays
+        // 
+        //splice method;; add value in middle of array 
+
+        myArr.splice( 1,0,"ali","anas")
+        console.log(myArr)
+
+        //slice method can use to pick value between indexes
+        let anotherarray=myArr.slice(2,3)
+        console.log(anotherarray)
+    </script>
+</body>
+
+</html>
