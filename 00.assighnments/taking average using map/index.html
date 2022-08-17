@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>average using map</h1>
+    <script>
+        let Arr = [19, 90, 87, 56, 24]
+
+        function avg(Arr) {
+            let sum = 0
+
+            Arr.map(
+                function (item) {
+                    sum = +item;
+                }
+            )
+                        return sum/Arr.length
+        }
+        console.log(avg(Arr))
+    </script>
+</body>¬
+
+</html>
